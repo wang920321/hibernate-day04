@@ -1,36 +1,8 @@
-/**  
-
-* Title: User.java  
-
-* Description:  
-
-* Copyright: Copyright (c) 2017 
-
-* Company: www.baidudu.com 
-
-* @author 172219902  
-
-* @date 2018年3月22日  
-
-* @version 1.0  
-
-*/
-package cn.itheima.domain;
+package cn.itcast.domain;
 
 import java.util.HashSet;
 import java.util.Set;
 
-/**  
-
-* Title: User  
-
-* Description:   
-
-* @author 172219902  
-
-* @date 2018年3月22日  
-
-*/
 public class User {
 	/*
 	 * CREATE TABLE `sys_user` (
@@ -47,96 +19,45 @@ public class User {
 	private String user_name;
 	private String user_password;
 	private Character user_state;
-	//多对多
-	private Set<Role> roles=new HashSet<Role>();
-	/**
-	 * @return the user_id
-	 */
+	//表达多对多
+	private Set<Role> roles = new HashSet<Role>();
 	public Long getUser_id() {
 		return user_id;
 	}
-	/**
-	 * @param user_id the user_id to set
-	 */
 	public void setUser_id(Long user_id) {
 		this.user_id = user_id;
 	}
-	/**
-	 * @return the user_code
-	 */
 	public String getUser_code() {
 		return user_code;
 	}
-	/**
-	 * @param user_code the user_code to set
-	 */
 	public void setUser_code(String user_code) {
 		this.user_code = user_code;
 	}
-	/**
-	 * @return the user_name
-	 */
 	public String getUser_name() {
 		return user_name;
 	}
-	/**
-	 * @param user_name the user_name to set
-	 */
 	public void setUser_name(String user_name) {
 		this.user_name = user_name;
 	}
-	/**
-	 * @return the user_password
-	 */
 	public String getUser_password() {
 		return user_password;
 	}
-	/**
-	 * @param user_password the user_password to set
-	 */
 	public void setUser_password(String user_password) {
 		this.user_password = user_password;
 	}
-	/**
-	 * @return the user_state
-	 */
 	public Character getUser_state() {
 		return user_state;
 	}
-	/**
-	 * @param user_state the user_state to set
-	 */
 	public void setUser_state(Character user_state) {
 		this.user_state = user_state;
 	}
-	
-	/**
-	 * @return the roles
-	 */
 	public Set<Role> getRoles() {
 		return roles;
 	}
-	/**
-	 * @param roles the roles to set
-	 */
 	public void setRoles(Set<Role> roles) {
 		this.roles = roles;
 	}
-	/* (non-Javadoc)  
 	
-	 * Title: toString 
 	
-	 * Description:   
-	
-	 * @return  
-	
-	 * @see java.lang.Object#toString()  
-	
-	 */
-	@Override
-	public String toString() {
-		return "User [user_id=" + user_id + ", user_code=" + user_code + ", user_name=" + user_name + ", user_password="
-				+ user_password + ", user_state=" + user_state + "]";
-	}
 	
 }

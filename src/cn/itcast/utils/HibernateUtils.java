@@ -1,4 +1,4 @@
-package cn.itheima.utils;
+package cn.itcast.utils;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
